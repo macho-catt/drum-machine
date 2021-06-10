@@ -1,0 +1,144 @@
+body{
+  background-color: #ff817b;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#drum-machine{
+  display: grid;
+  border: solid;
+  background-color: #b3b3b3;
+  height: 200px;
+  width: 400px;
+  grid-template-columns: 250px 150px;
+  grid-template-areas:
+  "drum-pad drum-control";
+}
+
+#drum-control{
+  grid-area: drum-control;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+}
+
+.screen{
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.volume-slider{
+  color:black;
+}
+
+.top{
+  margin-top: 40px;
+}
+
+.bottom{
+  margin-bottom: 40px;
+}
+
+.slider{
+  background-color: black;
+  position: absolute;
+  height: 15px;
+  width: 30px;
+  margin-left: 50px;
+}
+
+.inner{
+  background-color: #2f8dff;
+  height: 10px;
+  width: 10px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.inner-right{
+  background-color: #2f8dff;
+  height: 10px;
+  width: 10px;
+  margin-top: 2px;
+  margin-left: 18px;
+}
+
+#pad{
+  grid-area: drum-pad;
+  display: grid;
+  place-self: center;
+  grid-template-rows: 55px 55px 55px;
+  grid-template-columns: 65px 65px 65px;
+  grid-template-areas:
+  "Q W E"
+  "A S D"
+  "Z X C";
+}
+
+.drum-pad{
+  background-color: grey;
+  height: 50px;
+  width: 60px;
+  place-self: center;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;   
+  box-shadow: 2px 2px 2px;
+  border-radius: 8%;
+}
+
+#Q{
+  grid-area: Q;
+}
+
+#W{
+  grid-area: W;
+}
+
+#E{
+  grid-area: E;
+}
+
+#A{
+  grid-area: A;
+}
+
+#S{
+  grid-area: S;
+}
+
+#D{
+  grid-area: D;
+}
+
+#Z{
+  grid-area: Z;
+}
+
+#X{
+  grid-area: X;
+}
+
+#C{
+  grid-area: C;
+}
+
+
+.no-copy{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+}
