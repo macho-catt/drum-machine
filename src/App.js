@@ -188,18 +188,7 @@ const App = () => {
     }
     
   }
-/*
-  // On key up, remove the style to signify the button is not clicked anymore
-  const handleKeyUp = ({key}) => {
 
-    let clickedPad = pads.filter(pad => Object.values(pad).includes(key.toUpperCase()));
-
-    // Use ref to keep track of changing states powerOn and bank
-    if (clickedPad.length !== 0 && powerRef.current){
-      setPressedPad(null);
-    }
-  }
-  */
   // Initialize event listeners on first render only
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);

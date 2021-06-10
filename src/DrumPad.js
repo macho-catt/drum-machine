@@ -12,12 +12,7 @@ const DrumPad = ({ className, id, audio1Id, bankAudio1, audio2Id, bankAudio2, on
   
   // If pressedPad matches the button, the style of the pad changes to signify a button click
   const styleRef = useRef();
-  if (pressedPad === id){
-    styleRef.current = activeStyle;
-  }
-  else {
-    styleRef.current = inactiveStyle;
-  }
+  styleRef.current = (pressedPad === id) ? activeStyle : inactiveStyle;
 
   return(
     <div className="drum-pad no-copy" id={id} onClick={onClick} onMouseDown="return false" style={styleRef.current}>
